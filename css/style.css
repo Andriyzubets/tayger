@@ -1,0 +1,220 @@
+*{
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
+@font-face {
+	font-family: MarketBold;
+	src: url('../fonts/Market Fresh Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: MarketInlineBold;
+	src: url('../fonts/Market Fresh Inline Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: Market;
+	src: url('../fonts/Market Fresh.otf') format('truetype');
+}
+body {
+	background: #222222;
+}
+a {
+	text-decoration: none;
+}
+.header {
+	width: 90%;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 0;
+	background: transparent;
+	-ms-align-items: center;
+	align-items: center;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%,0%);
+	z-index: 100;
+}
+.header .logo {
+	width: 9%;
+	padding-top: 9%;
+	background: url(../img/logo-white.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	transition: all .2s;
+}
+.header .logo:hover {
+	opacity: .6;
+}
+.header .cont {
+	text-align: right;
+	color: #d22d3d;
+	text-transform: uppercase;
+	font: 24px MarketInlineBold;
+	letter-spacing: 2px;
+}
+.header .cont a {
+	color: #d22d3d;
+	font: 36px MarketInlineBold;
+	letter-spacing: 2px;
+	line-height: 2em;
+	display: block;
+}
+.header .cont p {
+	display: inline-block;
+	position: relative;
+}
+.header .cont p:before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: -45px;
+	bottom: 0;
+	width: 18px;
+	height: 25px;
+	background: url(../img/geo-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.video-title {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+.video-title video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:100%;
+	background-size: cover;
+	z-index: -1;
+}
+.video-title .title {
+	width: 37.5%;
+	padding: 16% 0 0 14%;
+}
+.video-title .title h1 {
+	color: #c9c9c9;
+	font: 51px MarketBold;
+	border-left: 5px solid #dcdcdc;
+	padding-left: 35px;
+	margin-bottom: 90px;
+}
+.video-title .title .tripple {
+	width:100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+}
+.video-title .title .tripple .item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	width: 30%;
+	font: 18px MarketBold;
+	text-align: center;
+	color: #fff;
+}
+.video-title .title .tripple .img {
+	width: 70%;
+	padding-top: 60%;
+	margin-bottom: 17px;
+}
+.video-title .title .tripple p {
+	line-height: 1.5em;
+}
+.video-title .title .tripple .img.lounge {
+	background: url(../img/lounge-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.video-title .title .tripple .img.karaoke {
+	background: url(../img/karaoke-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.video-title .title .tripple .img.hookah {
+	background: url(../img/hookah-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.promo-slider {
+	padding: 100px 0;
+	width: 90%;
+	margin: 0 auto;
+}
+.promo-slider .left {
+	width: 40%;
+	padding: 50px 0 55px 50px;
+}
+.promo-slider .left .tag {
+	color: #545454;
+	font: 50px MarketBold;
+	line-height: 1em;
+}
+.promo-slider .left .tag span {
+	font: 100 29px Roboto, sans-serif;
+	text-transform: uppercase;
+	display: block;
+}
+.promo-slider .left h2 {
+	margin: 40px 0;
+	color: #d3d3d3;
+	font: 50px MarketBold;
+	line-height: 1em;
+}
+.promo-slider .left .desc {
+	color: #808080;
+	font: 300 24px Roboto, sans-serif;
+	width: 60%;
+}
+.promo-slider .left .double {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 120px;
+	-ms-align-items: center;
+	align-items: center;
+}
+.promo-slider .left .double .timeline {
+	width: 47%;
+	height: 3px;
+	background: #ffc0c0;
+	position: relative;
+}
+.promo-slider .left .double .timeline span {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 35%;
+	height: 6px;
+	background: #d24a43;
+}
+.promo-slider .left .double .arrow {
+	width: 22px;
+	height: 12px;
+	background: url(../img/arrow-right.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
