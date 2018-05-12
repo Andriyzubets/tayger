@@ -86,6 +86,11 @@ a {
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 }
 .video-title video {
 	position: absolute;
@@ -156,14 +161,33 @@ a {
 	-webkit-background-size: contain;
 	background-size: contain;
 }
+.video-title .img {
+	background: url(../img/tiger-gray.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 25%;
+	margin-left: 6%;
+}
 .promo-slider {
-	padding: 100px 0;
+	box-shadow: 0 10px 35px #191919;
+	margin-bottom: 100px;
+}
+.promo-slider .wrap {
+	padding: 100px 0 0;
 	width: 90%;
 	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 }
 .promo-slider .left {
 	width: 40%;
 	padding: 50px 0 55px 50px;
+	z-index: 10;
 }
 .promo-slider .left .tag {
 	color: #545454;
@@ -186,6 +210,19 @@ a {
 	font: 300 24px Roboto, sans-serif;
 	width: 60%;
 }
+.promo-slider .left .slide-text-wrap .slide {
+	display: none;
+	opacity: 0;
+	transform: translate(0,-15px);
+	transition: all .5s ease-in-out;
+}
+.promo-slider .left .slide-text-wrap .slide.active {
+	display: block;
+}
+.promo-slider .left .slide-text-wrap .slide.active.op {
+	opacity: 1;
+	transform: translate(0,0);
+}
 .promo-slider .left .double {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -207,14 +244,228 @@ a {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	width: 35%;
 	height: 6px;
 	background: #d24a43;
+	animation: timeline 4s ease-in-out infinite;
+}
+@keyframes timeline {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
 }
 .promo-slider .left .double .arrow {
 	width: 22px;
 	height: 12px;
 	background: url(../img/arrow-right.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	cursor: pointer;
+	animation: rollRight 1.5s ease-in-out infinite;
+	outline: none;
+
+}
+@keyframes rollRight {
+	0% {
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(5px,0);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+.promo-slider .right {
+	position: absolute;
+	width: 65%;
+	height: 70%;
+	right: 0;
+}
+.promo-slider .right .slide {
+	-webkit-clip-path: polygon(5.5% 0%, 30% 100%, 100% 100%, 100% 0%);
+	clip-path: polygon(5.5% 0%, 30% 100%, 100% 100%, 100% 0%);
+	position: absolute;
+	display: none;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	transform: translate(15px,0);
+}
+.promo-slider .right .slide.active {
+	display: block;
+	
+}
+.promo-slider .right .slide.active.op {
+	opacity: 1;
+	transform: translate(0,0);
+}
+.promo-slider .right .slide1 {
+	background: url(../img/slide-1.png) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.promo-slider .right .slide2 {
+	background: url(../img/slide-1.png) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.promo-slider .right .slide3 {
+	background: url(../img/slide-1.png) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.promo-slider .right .slide4 {
+	background: url(../img/slide-1.png) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.promo-slider .right .slide5 {
+	background: url(../img/slide-1.png) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+section.menu {
+	width: 90%;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.menu .main {
+	width: 68%;
+}
+.menu .main .promo {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.menu .main .promo .double {
+	width: 48%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.menu .main .promo .item1 {
+	background: url(../img/spec-main-img.jpg) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 795px;
+	width: calc(48% - 30px);
+}
+.menu .main .promo .item {
+	padding: 50px 15px 0 15px;
+	position: relative;
+}
+.menu .main .promo .item h3 {
+	color: #fefefe;
+	font: 36px MarketBold;
+}
+
+.menu .main .promo .item .price {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #222222;
+	color: #ff2121;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+	padding: 20px 15px;
+	width: calc(50% - 30px);
+}
+.menu .main .promo .item .price .from {
+	font: 300 24px Roboto;
+}
+.menu .main .promo .item .price > span {
+	margin-right: 15px;
+}
+.menu .main .promo .item .price .weight {
+	margin-top: 5px;
+}
+.menu .main .promo .item .price .price-item {
+	color: #fefefe;
+	font: 50px MarketBold;
+	line-height: 1.1em;
+}
+.menu .main .promo .item2, .menu .main .promo .item3 {
+	height: calc(48% - 50px)
+}
+.menu .main .promo .item2 {
+	background: url(../img/spec-2-img.jpg) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.menu .main .promo .item3 {
+	background: url(../img/spec-3-img.jpg) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.menu  .nav {
+	width: 28%;
+	padding-top: 40px;
+}
+.menu  .nav h2 {
+	color: #cfcfcf;
+	font: 51px MarketBold;
+}
+.menu  .nav ul {
+	padding: 80px 0 0 60px;
+	color: #cfcfcf;
+	font: 24px MarketBold;
+}
+.menu  .nav ul li {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+	width: 63%;
+	padding: 10px 20px;
+	border: 1px solid #d12329;
+	margin-bottom: 15px;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+.menu  .nav ul li:hover, .menu  .nav ul li.active {
+	background: #290000;
+	transform: translate(10px,0);
+}
+.menu  .nav ul li span {
+	width: 50%;
+}
+.menu  .nav ul li .img {
+	width: 22%;
+	padding-top: 22%;
+	background: url(../img/pizza-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.menu  .nav ul li .img.sushi {
+	background: url(../img/pizza-icon.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
