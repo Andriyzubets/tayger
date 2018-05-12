@@ -341,6 +341,9 @@ section.menu {
 	width: 68%;
 }
 .menu .main .promo {
+	
+}
+.menu .main .promo .wrap {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -425,7 +428,7 @@ section.menu {
 	width: 28%;
 	padding-top: 40px;
 }
-.menu  .nav h2 {
+.menu  .nav h2, .menu .tab h2 {
 	color: #cfcfcf;
 	font: 51px MarketBold;
 }
@@ -468,4 +471,47 @@ section.menu {
 	background: url(../img/pizza-icon.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
+}
+.menu .pizza-tab, .menu .sushi-tab, .menu .lunch-tab, .menu .desert-tab, .menu .salad-tab, .menu .drinks-tab {
+	height: 795px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+.menu .pizza-tab .wrap, .menu .sushi-tab .wrap, .menu .lunch-tab .wrap, .menu .desert-tab .wrap, .menu .salad-tab .wrap, .menu .drinks-tab .wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	height: 100%;
+}
+.menu .pizza-tab .wrap .item, .menu .sushi-tab .wrap .item, .menu .lunch-tab .wrap .item, .menu .desert-tab .wrap .item, .menu .salad-tab .wrap .item, .menu .drinks-tab .wrap .item {
+	width: 30%;
+	padding-top: 19%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+	border: 2px solid #fff;
+}
+.menu .main > .tab {
+	display: none;
+	opacity:0;
+	transition: .4s ease-in-out;
+	transform: translate(0,-15px);
+}
+.menu .main > .tab.active {
+	display: block;
+}
+.menu .main > .tab.active.op {
+	opacity:1;
+	transform: translate(0,0);
 }
