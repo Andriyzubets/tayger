@@ -316,10 +316,14 @@ function init() {
 }
 
 // scroll
-
 let scroll = document.body.scrollTop;
 window.addEventListener('scroll', function() {
 	scroll = window.pageYOffset || document.documentElement.scroll;
 	headerScrolled = scroll > 1 ? document.querySelector('.header').classList.add('fixed') : document.querySelector('.header').classList.remove('fixed');
 
 });
+
+// disables
+if (document.body.clientWidth<660){
+	document.querySelector('.video-title video').pause();
+}

@@ -72,6 +72,9 @@ a {
 	line-height: 2em;
 	display: block;
 }
+.header .cont a:hover {
+	opacity: .6;
+}
 .header .cont p {
 	display: inline-block;
 	position: relative;
@@ -288,7 +291,8 @@ a {
 .promo-slider .right {
 	position: absolute;
 	width: 65%;
-	height: 70%;
+	height: 60%;
+	padding-top: 50px;
 	right: 0;
 }
 .promo-slider .right .slide {
@@ -597,4 +601,142 @@ section.menu {
 .map .map-area {
 	width: 100%;
 	height: 500px;
+}
+
+/*******************
+***** adaptive *****
+*******************/
+@media screen and (max-width: 1500px) {
+	.video-title .title h1, .promo-slider .left .tag, .promo-slider .left h2 {
+		font-size: 36px;
+	}
+	.header .cont a {
+		font-size: 24px;
+	}
+	.header .cont a, .promo-slider .left .tag span, .promo-slider .left .desc {
+		font-size: 21px;
+	}
+	.map .title .cont > a, .map .title .cont p {
+		font-size: 16px;
+		padding: 15px 0;
+	}
+	.map .title .cont > a {
+		padding-top: 0;
+	}
+}
+@media screen and (max-width: 1366px) {
+	.video-title .title {
+		padding-top: 13%;
+	}
+	.video-title .title h1 {
+		margin-bottom: 45px;
+	}
+
+}
+@media screen and (max-width: 1024px) {
+	.video-title .title h1, .promo-slider .left .tag, .promo-slider .left h2 {
+		font-size: 28px;
+	}
+	.video-title .title .tripple .item {
+		font-size: 14px;
+	}
+	.video-title .title {
+		padding-top: 16%;
+	}
+	.header .cont a {
+		font-size: 21px;
+		line-height: 1.5em;
+	}
+	.header .cont p, .promo-slider .left .tag span, .promo-slider .left .desc {
+		font-size: 18px;
+	}
+	.promo-slider .left .double {
+		padding-top: 60px;
+	}
+	.promo-slider .right {
+		height: 50%;
+	}
+	.map .title {
+		width: 40%;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.map .title .cont {
+		width: calc(100% - 60px);
+	}
+	 .map .title .logo {
+	 	display: none;
+	 }
+	 .map .map-area {
+	 	height: 70vh;
+	 }
+}
+@media screen and (max-width: 922px) {
+	.video-title > .img {
+		display: none;
+	}
+	.video-title .title {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.video-title video {
+		width: auto;
+		height: 100%
+	}
+}
+@media screen and (max-width: 660px) {
+	.video-title .title {
+		padding-top: 22%;
+		width: 70%;
+	}
+	.header .logo {
+		width: 13%;
+		padding-top: 13%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.video-title .title {
+		padding-top: 115px;
+	}
+	.header .logo {
+		padding-top: 80px;
+		width: 80px;
+	}
+	.video-title .title h1 {
+		font-size: 22px;
+		letter-spacing: 4px;
+	}
+	.video-title .title .tripple .img {
+		display: none;
+	}
+	.video-title .title .tripple {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.video-title .title .tripple .item {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.video-title .title .tripple p {
+		font-size: 16px;
+	}
+	.header .wrap {
+		padding-top: 15px;
+	}
+	.header .cont a {
+		font-size: 18px;
+	}
+	.header .cont p {
+		font-size: 14px;
+	}
+	.map .title .cont > a, .map .title .cont p {
+		font-size: 12px;
+	}
 }
