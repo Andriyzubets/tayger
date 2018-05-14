@@ -683,6 +683,19 @@ section.menu {
 	transform: translate(15px,0);
 	transition: .2s ease-in-out;
 }
+.placement .wrap .first-floor .close {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+	left: 5px;
+	top: 5px;
+	background: url(../img/close-but.png)50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	cursor: pointer;
+	z-index: 100;
+}
 .placement .wrap .first-floor.active {
 	display: block;
 }
@@ -761,7 +774,7 @@ span:nth-of-type(2) {
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
-	color: #da0404;
+	color: #e1a957;
 	font: 16px MarketBold;
 	line-height: 1em;
 	justify-content: space-between;
@@ -779,7 +792,7 @@ span:nth-of-type(2) {
 	margin-top: 30px;
 }
 .placement .wrap .first-floor .double .left .descr a {
-	color: #ff0000;
+	color: #e1a957;
 }
 .placement .wrap .first-floor .double .right  {
 	width: 34%;
@@ -805,11 +818,14 @@ span:nth-of-type(2) {
 .placement .wrap .first-floor .double .right .goods .item:nth-of-type(2n) p:nth-of-type(1) {
 	font: 100 18px Roboto;
 	color: #f0f0f0;
-	
+	text-decoration: line-through;
+}
+.placement .wrap .first-floor .double .right .goods .item:nth-of-type(2) p:nth-of-type(1) {
+	text-decoration: none;
 }
 .placement .wrap .first-floor .double .right .goods .item:nth-of-type(1) p:nth-of-type(1), .placement .wrap .first-floor .double .right .goods .item:nth-of-type(3) p:nth-of-type(1), .placement .wrap .first-floor .double .right .goods .item:nth-of-type(5) p:nth-of-type(1) {
 	font: 50px MarketBold;
-	color: #da0404;
+	color: #e1a957;
 }
 .placement .wrap .first-floor .double .right .goods .item:nth-of-type(1) p:nth-of-type(2),.placement .wrap .first-floor .double .right .goods .item:nth-of-type(3) p:nth-of-type(2), .placement .wrap .first-floor .double .right .goods .item:nth-of-type(5) p:nth-of-type(2)   {
 	font: 100 18px Roboto;
@@ -821,7 +837,7 @@ span:nth-of-type(2) {
 	margin-bottom: 12px;
 }
 .placement .wrap .first-floor .double .right .goods .lounge .img {
-	background: url(../img/lounge-icon.png) 50% no-repeat;
+	background: url(../img/lounge-icon-orange.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -863,7 +879,430 @@ span:nth-of-type(2) {
 	right: -2em;
 	transform: rotate(-90deg);
 }
+/* second floor*/
+.placement .wrap .second-floor {
+	position: absolute;
+	width: 73%;
+	right: -1%;
+	top: -1%;
+	height: 102%;
+	background: #222222 url(../img/tiger-gray-lay.png) 0% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	box-shadow: 0 10px 35px #191919;
+	display: none;
+	opacity: 0;
+	transform: translate(15px,0);
+	transition: .2s ease-in-out;
+}
+.placement .wrap .second-floor .close {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+	left: 5px;
+	top: 5px;
+	background: url(../img/close-but.png)50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	cursor: pointer;
+	z-index: 100;
+}
+.placement .wrap .second-floor.active {
+	display: block;
+}
+.placement .wrap .second-floor.active.op {
+	opacity:1;
+	transform: translate(0,0);
+}
+.placement .wrap .second-floor .double {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.placement .wrap .second-floor .double .left {
+	width: 64%;
+	padding: 30px 20px 0;
+}
+.placement .wrap .second-floor .double .left .scheme {
+	width: 93%;
+	padding-top: 73%;
+	background: url(../img/second-floor-scheme.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin-bottom: 35px;
+}
+.placement .wrap .second-floor .double .left .buttons {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.placement .wrap .second-floor .double .left .buttons .double {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 49%;
+}
+.placement .wrap .second-floor .double .left .buttons .double a {
+	border: 2px solid #d12329;
+	padding: 12px 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	background: #1f1f1f;
+}
+.placement .wrap .second-floor .double .left .buttons .double a span:nth-of-type(1) {
+	font: 30px MarketBold;
+	color: #ffffff;
+	margin-right: 20px;
+	line-height: 1;
+}
+span:nth-of-type(2) {
+	color: #da0404;
+	font: 16px MarketBold;
+	line-height: 1em;
+}
+.placement .wrap .second-floor .double .left .buttons .book {
+	width: 40%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	color: #e1a957;
+	font: 16px MarketBold;
+	line-height: 1em;
+	justify-content: space-between;
+}
+.placement .wrap .second-floor .double .left .buttons .book .img {
+	background: url(../img/credit-card.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 55px;
+	height: 40px;
+}
+.placement .wrap .second-floor .double .left .descr {
+	font: 18px Roboto;
+	color: #999999;
+	margin-top: 30px;
+}
+.placement .wrap .second-floor .double .left .descr a {
+	color: #e1a957;
+}
+.placement .wrap .second-floor .double .right  {
+	width: 34%;
+	padding: 15px 35px 0 0;
+}
+.placement .wrap .second-floor .double .right .goods {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.placement .wrap .second-floor .double .right .goods .item {
+	width: 47%;
+	margin-bottom: 35px;
+}
+.placement .wrap .second-floor .double .right .goods .item:nth-of-type(2n) p:nth-of-type(1) {
+	font: 100 18px Roboto;
+	color: #f0f0f0;
+	text-decoration: line-through;
+}
+.placement .wrap .second-floor .double .right .goods .item:nth-of-type(2) p:nth-of-type(1) {
+	text-decoration: none;
+}
+.placement .wrap .second-floor .double .right .goods .item:nth-of-type(1) p:nth-of-type(1), .placement .wrap .second-floor .double .right .goods .item:nth-of-type(3) p:nth-of-type(1), .placement .wrap .second-floor .double .right .goods .item:nth-of-type(5) p:nth-of-type(1) {
+	font: 50px MarketBold;
+	color: #e1a957;
+}
+.placement .wrap .second-floor .double .right .goods .item:nth-of-type(1) p:nth-of-type(2),.placement .wrap .second-floor .double .right .goods .item:nth-of-type(3) p:nth-of-type(2), .placement .wrap .second-floor .double .right .goods .item:nth-of-type(5) p:nth-of-type(2)   {
+	font: 100 18px Roboto;
+	color: #f0f0f0;
+}
+.placement .wrap .second-floor .double .right .goods .item .img {
+	width: 45%;
+	padding-top: 30%;
+	margin-bottom: 12px;
+}
+.placement .wrap .second-floor .double .right .goods .lounge .img {
+	background: url(../img/lounge-icon-orange.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.placement .wrap .second-floor .double .right .goods .hookah .img {
+	background: url(../img/hookah-icon-gray.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.placement .wrap .second-floor .double .right .goods .kar .img {
+	background: url(../img/karaoke-icon-gray.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.placement .second-floor .butts {
+	position: absolute;
+	bottom: -.8em;
+	right: 4%;
+	font: 80px MarketBold;
+	color: #282828;
+}
 
+.placement .second-floor .butts div {
+	display: inline-block;
+	margin-right: 50px;
+	cursor: pointer;
+}
+.placement .second-floor .butts div.active {
+	font-size: 120px;
+	color: #606060;
+	position: relative;
+}
+.placement .second-floor .butts div.active:after {
+	content: 'Этаж';
+	display: block;
+	position: absolute;
+	font: 500 18px MarketBold;
+	color: #484848;
+	bottom: 27%;
+	right: -2em;
+	transform: rotate(-90deg);
+}
+/* third floor */
+.placement .wrap .third-floor {
+	position: absolute;
+	width: 73%;
+	right: -1%;
+	top: -1%;
+	height: 102%;
+	background: #222222 url(../img/tiger-gray-lay.png) 0% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	box-shadow: 0 10px 35px #191919;
+	display: none;
+	opacity: 0;
+	transform: translate(15px,0);
+	transition: .2s ease-in-out;
+}
+.placement .wrap .third-floor .close {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+	left: 5px;
+	top: 5px;
+	background: url(../img/close-but.png)50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	cursor: pointer;
+	z-index: 100;
+}
+.placement .wrap .third-floor.active {
+	display: block;
+}
+.placement .wrap .third-floor.active.op {
+	opacity:1;
+	transform: translate(0,0);
+}
+.placement .wrap .third-floor .double {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.placement .wrap .third-floor .double .left {
+	width: 64%;
+	padding: 30px 20px 0;
+}
+.placement .wrap .third-floor .double .left .scheme {
+	width: 93%;
+	padding-top: 73%;
+	background: url(../img/third-floor-scheme.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin-bottom: 35px;
+}
+.placement .wrap .third-floor .double .left .buttons {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.placement .wrap .third-floor .double .left .buttons .double {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 49%;
+}
+.placement .wrap .third-floor .double .left .buttons .double a {
+	border: 2px solid #d12329;
+	padding: 12px 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	background: #1f1f1f;
+}
+.placement .wrap .third-floor .double .left .buttons .double a span:nth-of-type(1) {
+	font: 30px MarketBold;
+	color: #ffffff;
+	margin-right: 20px;
+	line-height: 1;
+}
+span:nth-of-type(2) {
+	color: #da0404;
+	font: 16px MarketBold;
+	line-height: 1em;
+}
+.placement .wrap .third-floor .double .left .buttons .book {
+	width: 40%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	color: #e1a957;
+	font: 16px MarketBold;
+	line-height: 1em;
+	justify-content: space-between;
+}
+.placement .wrap .third-floor .double .left .buttons .book .img {
+	background: url(../img/credit-card.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 55px;
+	height: 40px;
+}
+.placement .wrap .third-floor .double .left .descr {
+	font: 18px Roboto;
+	color: #999999;
+	margin-top: 30px;
+}
+.placement .wrap .third-floor .double .left .descr a {
+	color: #e1a957;
+}
+.placement .wrap .third-floor .double .right  {
+	width: 34%;
+	padding: 15px 35px 0 0;
+}
+.placement .wrap .third-floor .double .right .goods {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.placement .wrap .third-floor .double .right .goods .item {
+	width: 47%;
+	margin-bottom: 35px;
+}
+.placement .wrap .third-floor .double .right .goods .item:nth-of-type(2n) p:nth-of-type(1) {
+	font: 100 18px Roboto;
+	color: #f0f0f0;
+	text-decoration: line-through;
+}
+.placement .wrap .third-floor .double .right .goods .item:nth-of-type(2) p:nth-of-type(1) {
+	text-decoration: none;
+}
+.placement .wrap .third-floor .double .right .goods .item:nth-of-type(1) p:nth-of-type(1), .placement .wrap .third-floor .double .right .goods .item:nth-of-type(3) p:nth-of-type(1), .placement .wrap .third-floor .double .right .goods .item:nth-of-type(5) p:nth-of-type(1) {
+	font: 50px MarketBold;
+	color: #e1a957;
+}
+.placement .wrap .third-floor .double .right .goods .item:nth-of-type(1) p:nth-of-type(2),.placement .wrap .third-floor .double .right .goods .item:nth-of-type(3) p:nth-of-type(2), .placement .wrap .third-floor .double .right .goods .item:nth-of-type(5) p:nth-of-type(2)   {
+	font: 100 18px Roboto;
+	color: #f0f0f0;
+}
+.placement .wrap .third-floor .double .right .goods .item .img {
+	width: 45%;
+	padding-top: 30%;
+	margin-bottom: 12px;
+}
+.placement .wrap .third-floor .double .right .goods .lounge .img {
+	background: url(../img/lounge-icon-orange.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.placement .wrap .third-floor .double .right .goods .hookah .img {
+	background: url(../img/hookah-icon-gray.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.placement .wrap .third-floor .double .right .goods .kar .img {
+	background: url(../img/karaoke-icon-gray.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.placement .third-floor .butts {
+	position: absolute;
+	bottom: -.8em;
+	right: 4%;
+	font: 80px MarketBold;
+	color: #282828;
+}
+
+.placement .third-floor .butts div {
+	display: inline-block;
+	margin-right: 50px;
+	cursor: pointer;
+}
+.placement .third-floor .butts div.active {
+	font-size: 120px;
+	color: #606060;
+	position: relative;
+}
+.placement .third-floor .butts div.active:after {
+	content: 'Этаж';
+	display: block;
+	position: absolute;
+	font: 500 18px MarketBold;
+	color: #484848;
+	bottom: 27%;
+	right: -2em;
+	transform: rotate(-90deg);
+}
 /******************
 ****** Map ********
 ******************/
