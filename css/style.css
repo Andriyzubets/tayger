@@ -518,6 +518,7 @@ section.menu {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 }
 .placement .wrap .control {
 	width: 26.5%;
@@ -539,10 +540,34 @@ section.menu {
 	color: #999999;
 	font-size: 18px;
 }
+.placement .wrap .control .view {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 20px 60px;
+	margin-top: 15px;
+	border: 1px solid #d12329;
+	background: #1f1f1f;
+	color: #fff;
+	font: 24px MarketBold;
+	width: calc(70% - 120px);
+}
+.placement .wrap .control .view .img {
+	background: url(../img/360view.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+}
 .placement .wrap .control .buts {
 	font: 80px MarketBold;
 	color: #282828;
-	margin: 130px 0 50px;
+	margin: 30px 0 50px;
 }
 .placement .wrap .control .buts div {
 	display: inline-block;
@@ -619,6 +644,59 @@ section.menu {
 .placement .wrap .slide.active.op {
 	opacity: 1;
 	transform: translate(0,0);
+}
+.placement .wrap .slider .lines {
+	position: absolute;
+	bottom: 6.5%;
+	left:  0;
+	width: 15%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.placement .wrap .slider .lines span {
+	width: 20%;
+	height: 2px;
+	background: #4e4e4e;
+}
+.placement .wrap .slider .lines span.active {
+	display: block;
+}
+.placement .wrap .slider .lines span.active {
+	background: #ffffff;
+}
+.placement .wrap .first-floor {
+	position: absolute;
+	width: 73%;
+	right: -1%;
+	top: -1%;
+	height: 102%;
+	background: #222222 url(../img/tiger-gray-lay.png) 0% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	box-shadow: 0 10px 35px #191919;
+}
+.placement .wrap .first-floor .double {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.placement .wrap .first-floor .double .left {
+	width: 64%;
+	padding: 60px 20px 0;
+}
+.placement .wrap .first-floor .double .left .scheme {
+	width: 93%;
+	padding-top: 73%;
+	background: url(../img/first-floor-scheme.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
 }
 /******************
 ****** Map ********
