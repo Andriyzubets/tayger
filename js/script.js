@@ -456,7 +456,34 @@ function slider2() {
 		}
 	}
 }
+// first floor 
+let leftContButts = document.querySelectorAll('.placement .control .buts div')
+let firstFloorLay = document.querySelector('.placement .first-floor');
+leftContButts[0].onclick = function() {
+	leftContButts[1].classList.remove('active');
+	leftContButts[2].classList.remove('active');
+	setTimeout(function(){
+		firstFloorLay.classList.add('active');
+		setTimeout(function(){
+			firstFloorLay.classList.add('op');
+		},200);
+	},200);
 
+	if(leftContButts[1].classList.contains('active')) {
+		leftContButts[1].classList.remove('op');
+		// imgPlaceSlides[0].classList.remove('op');
+		setTimeout(function(){
+			// lineSlides[0].classList.remove('active');
+			// imgPlaceSlides[0].classList.remove('active');
+			leftContButts[0].classList.add('active');
+			firstFloorLay.classList.add('active');
+			setTimeout(function(){
+				leftContButts[0].classList.add('op');
+				firstFloorLay.classList.add('op');
+			},200);
+		},200);
+	}
+}
 // page settings
 	// video
 	document.querySelector('.video-title video').setAttribute('src', headerVideo)
