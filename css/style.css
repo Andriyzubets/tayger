@@ -498,8 +498,8 @@ section.menu {
 .menu .pizza-tab .wrap .item, .menu .sushi-tab .wrap .item, .menu .lunch-tab .wrap .item, .menu .desert-tab .wrap .item, .menu .salad-tab .wrap .item, .menu .drinks-tab .wrap .item {
 	width: 30%;
 	padding-top: 19%;
-    margin-bottom: 1%;
-    margin-right: 1%;
+	margin-bottom: 1%;
+	margin-right: 1%;
 	border: 2px solid #fff;
 }
 .menu .main > .tab {
@@ -514,4 +514,79 @@ section.menu {
 .menu .main > .tab.active.op {
 	opacity:1;
 	transform: translate(0,0);
+}
+.map {
+	position: relative;
+}
+.map .title {
+	width: 35.5%;
+	position: absolute;
+	right: 4%;
+	top: 50%;
+	transform: translate(0,-50%);
+	/*background: #222222;*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	/*padding: 40px 30px;*/
+}
+.map .title .cont, .map .title .logo {
+	padding: 40px 30px;
+	width: calc(50% - 61px);
+	background: #222222;
+}
+.map .title .cont > a, .map .title .cont p {
+	color: #fff;
+	font: 24px MarketInlineBold;
+	padding: 30px 0;
+	text-align: center;
+	display: block;
+	border-bottom: 1px solid #ff0000;
+	letter-spacing: 2px;
+}
+.map .title .cont > a {
+	padding-top: 0;
+}
+.map .title .cont .links {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.map .title .cont .links a {
+	display: inline-block;
+	width: 21%;
+	padding-top: 21%;
+	border-radius: 50%;
+}
+.map .title .cont .links a.fb {
+	background: #202020 url(../img/fb-icon.png) 50% no-repeat;
+	background-size: 40%;
+}
+.map .title .cont .links a.be {
+	background: #202020 url(../img/be-icon.png) 50% no-repeat;
+	background-size: 60%;
+}
+.map .title .cont .links a.goo {
+	background: #202020 url(../img/goo-icon.png) 50% no-repeat;
+	background-size: 60%;
+}
+.map .title .logo .img {
+	width: 100%;
+	height: 100%;
+	background: url(../img/tiger-logo-map.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.map .map-area {
+	width: 100%;
+	height: 500px;
 }
