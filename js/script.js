@@ -523,10 +523,10 @@ leftContButts[2].onclick = function() {
 		},200);
 	},200);
 }
-secondFloorLayClose.onclick = function() {
-	secondFloorLay.classList.remove('op');
+thirdFloorLayClose.onclick = function() {
+	thirdFloorLay.classList.remove('op');
 	setTimeout(function(){
-		secondFloorLay.classList.remove('active');
+		thirdFloorLay.classList.remove('active');
 	},200);
 }
 // page settings
