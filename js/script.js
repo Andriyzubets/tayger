@@ -297,8 +297,8 @@ if(document.querySelector('.menu')) {
 		},200);
 	}
 }
+// google maps
 google.maps.event.addDomListener(window, 'load', init);
-
 function init() {
 	var mapOptions = {
 		zoom: 16,
@@ -314,3 +314,12 @@ function init() {
 		icon: 'img/tiger-on-map.png'
 	});
 }
+
+// scroll
+
+let scroll = document.body.scrollTop;
+window.addEventListener('scroll', function() {
+	scroll = window.pageYOffset || document.documentElement.scroll;
+	headerScrolled = scroll > 1 ? document.querySelector('.header').classList.add('fixed') : document.querySelector('.header').classList.remove('fixed');
+
+});
