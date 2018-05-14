@@ -31,7 +31,27 @@ a {
 	width: 100vw;
 }
 .header.fixed {
-	/*background: #222222;*/
+	background: #222222;
+	box-shadow: 0 10px 35px #191919;
+}
+.header.fixed .center .desc {
+	display: none;
+}
+.header.fixed .center .item {
+	margin-bottom: 0;
+}
+.header.fixed .logo {
+	background: url(../img/logo-fixed.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 3.5%;
+	padding-top: 4.3%;
+}
+.header.fixed .wrap {
+	padding: 10px 0;
+}
+.header.fixed .cont a {
+	line-height: 1.5em;
 }
 .header .wrap {
 	width: 90%;
@@ -58,15 +78,68 @@ a {
 .header .logo:hover {
 	opacity: .6;
 }
+.header .center {
+	width: 38.4%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.header .center .item {
+	width: 33%;
+	color: #ffe5c0;
+	font: 500 14px Roboto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.header .center .item .img {
+	width: 25%;
+	padding-top: 25%;
+	margin-right: 10px;
+}
+.header .center .time .img {
+	background: url(../img/time.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.header .center .wifi .img {
+	background: url(../img/wifi.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.header .center .plug .img {
+	background: url(../img/plug.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.header .center .desc {
+	color: #ffe5c0;
+	font: 14px Roboto;
+	padding-left: 12px;
+	border-left: 3px solid #d6a154;
+}
 .header .cont {
 	text-align: right;
-	color: #d22d3d;
+	color: #e1a957;
 	text-transform: uppercase;
 	font: 24px MarketInlineBold;
 	letter-spacing: 2px;
 }
 .header .cont a {
-	color: #d22d3d;
+	color: #e89f34;
 	font: 36px MarketInlineBold;
 	letter-spacing: 2px;
 	line-height: 2em;
@@ -451,12 +524,35 @@ section.menu {
 .menu  .nav ul li .img {
 	width: 22%;
 	padding-top: 22%;
+	
+}
+.menu  .nav ul li .img.pizza {
 	background: url(../img/pizza-icon.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
 .menu  .nav ul li .img.sushi {
-	background: url(../img/pizza-icon.png) 50% no-repeat;
+	background: url(../img/sushi-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.menu  .nav ul li .img.lunch {
+	background: url(../img/lunch-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.menu  .nav ul li .img.desert {
+	background: url(../img/desert-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.menu  .nav ul li .img.salad {
+	background: url(../img/salad-icon.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.menu  .nav ul li .img.drink {
+	background: url(../img/drinks-icon.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -568,6 +664,7 @@ section.menu {
 	font: 80px MarketBold;
 	color: #282828;
 	margin: 30px 0 50px;
+	min-height: 129px;
 }
 .placement .wrap .control .buts div {
 	display: inline-block;
@@ -866,7 +963,7 @@ span:nth-of-type(2) {
 }
 .placement .first-floor .butts div.active {
 	font-size: 120px;
-	color: #606060;
+	color: #483d2d;
 	position: relative;
 }
 .placement .first-floor .butts div.active:after {
@@ -1078,7 +1175,7 @@ span:nth-of-type(2) {
 }
 .placement .second-floor .butts div.active {
 	font-size: 120px;
-	color: #606060;
+	color: #483d2d;
 	position: relative;
 }
 .placement .second-floor .butts div.active:after {
@@ -1290,7 +1387,7 @@ span:nth-of-type(2) {
 }
 .placement .third-floor .butts div.active {
 	font-size: 120px;
-	color: #606060;
+	color: #483d2d;
 	position: relative;
 }
 .placement .third-floor .butts div.active:after {
@@ -1384,6 +1481,97 @@ span:nth-of-type(2) {
 }
 .map .gm-style > div:nth-of-type(2), .map .gm-style > div:nth-of-type(4), .map .gm-style > div:nth-of-type(6) {
 	display: none;
+}
+.footer {
+	padding: 45px 0 25px;
+}
+.footer .wrap {
+	width: 90%;
+	margin: 0 auto;
+}
+.footer .wrap .contacts {
+	width: 25%;
+	margin: 0 auto;
+	color: #e1a957;
+	font: 16px MarketBold;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.footer .wrap .contacts .logo {
+	width: 21%;
+	padding-top: 21%;
+	background: url(../img/logo-footer.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0 auto 25px;
+}
+.footer .wrap .contacts .links {
+	margin-top: 12px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	width: 100%:;
+}
+.footer .wrap .contacts .links a {
+	font: 100 14px Roboto;
+	color: #cc8d31;
+}
+.footer .wrap .copy {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+.footer .wrap .copy > p {
+	width: 23%;
+	color: #aaaaaa;
+	font-size: 14px;
+}
+.footer .wrap .copy .devs {
+	width: 20%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	color: #999999;
+}
+.footer .wrap .copy .devs span {
+	display: block;
+	color: #b9b9b9;
+}
+.footer .wrap .copy .devs > div {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.footer .wrap .copy .devs .design .img {
+	background: url(../img/why-not-logo.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 65px;
+	height: 45px;
+}
+.footer .wrap .copy .devs .dev .img {
+	background: url(../img/vinit-logo.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 45px;
+	height: 45px;
+	margin-left: 6px;
 }
 /*******************
 ***** adaptive *****
