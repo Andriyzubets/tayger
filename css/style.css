@@ -256,7 +256,6 @@ a {
 	bottom: 0;
 	height: 6px;
 	background: #d24a43;
-	animation: timeline 4s ease-in-out infinite;
 }
 @keyframes timeline {
 	0% {
@@ -313,31 +312,9 @@ a {
 	opacity: 1;
 	transform: translate(0,0);
 }
-.promo-slider .right .slide1 {
-	background: url(../img/slide-1.png) 50% no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.promo-slider .right .slide2 {
-	background: url(../img/slide-1.png) 50% no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.promo-slider .right .slide3 {
-	background: url(../img/slide-1.png) 50% no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.promo-slider .right .slide4 {
-	background: url(../img/slide-1.png) 50% no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.promo-slider .right .slide5 {
-	background: url(../img/slide-1.png) 50% no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
+/*****************
+***** Menu *******
+*****************/
 section.menu {
 	width: 90%;
 	margin: 0 auto;
@@ -526,6 +503,126 @@ section.menu {
 	opacity:1;
 	transform: translate(0,0);
 }
+/******************
+**** Placement ****
+******************/
+.placement {
+	margin-top: 90px;
+}
+.placement .wrap {
+	width: 90%;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.placement .wrap .control {
+	width: 26.5%;
+	padding: 90px 0 50px;
+}
+
+.placement .wrap .control h2 {
+	color: #e4e4e4;
+	font: 50px MarketBold;
+	line-height: 1.1em;
+	margin-bottom: 25px;
+}
+.placement .wrap .control .subtitle {
+	color: #999999;
+	font-size: 24px;
+	margin-bottom: 60px;
+}
+.placement .wrap .control .descr {
+	color: #999999;
+	font-size: 18px;
+}
+.placement .wrap .control .buts {
+	font: 80px MarketBold;
+	color: #282828;
+	margin: 130px 0 50px;
+}
+.placement .wrap .control .buts div {
+	display: inline-block;
+	margin-right: 50px;
+	cursor: pointer;
+}
+.placement .wrap .control .buts div.active {
+	font-size: 120px;
+	color: #606060;
+	position: relative;
+}
+.placement .wrap .control .buts div.active:after {
+	content: 'Этаж';
+	display: block;
+	position: absolute;
+	font: 500 18px MarketBold;
+	color: #484848;
+	bottom: 27%;
+	right: -2em;
+	transform: rotate(-90deg);
+}
+.placement .wrap .control .double {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.placement .wrap .control .double .timeline {
+	width: 47%;
+	height: 3px;
+	background: #ffc0c0;
+	position: relative;
+}
+.placement .wrap .control .double .timeline span {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 6px;
+	background: #d24a43;
+}
+.placement .wrap .control .double .arrow {
+	width: 22px;
+	height: 12px;
+	background: url(../img/arrow-right.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	cursor: pointer;
+	animation: rollRight 1.5s ease-in-out infinite;
+	outline: none;
+}
+.placement .wrap .slider {
+	width: 71%;
+	position: relative;
+}
+.placement .wrap .slide {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	clip-path: polygon(0% 0%, 0% 85%, 20% 85%, 20% 100%, 100% 100%, 100% 0%);
+	background: #ccc;
+	display: none;
+	opacity: 0;
+	transform: translate(15px,0);
+}
+.placement .wrap .slide.active {
+	display: block;
+}
+.placement .wrap .slide.active.op {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/******************
+****** Map ********
+******************/
 .map {
 	position: relative;
 	margin-top: 90px;
@@ -602,7 +699,9 @@ section.menu {
 	width: 100%;
 	height: 500px;
 }
-
+.map .gm-style > div:nth-of-type(2), .map .gm-style > div:nth-of-type(4), .map .gm-style > div:nth-of-type(6) {
+	display: none;
+}
 /*******************
 ***** adaptive *****
 *******************/
@@ -667,12 +766,12 @@ section.menu {
 	.map .title .cont {
 		width: calc(100% - 60px);
 	}
-	 .map .title .logo {
-	 	display: none;
-	 }
-	 .map .map-area {
-	 	height: 70vh;
-	 }
+	.map .title .logo {
+		display: none;
+	}
+	.map .map-area {
+		height: 70vh;
+	}
 }
 @media screen and (max-width: 922px) {
 	.video-title > .img {
