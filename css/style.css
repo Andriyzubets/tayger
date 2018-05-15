@@ -634,7 +634,7 @@ section.menu:before {
 	font: 500 14px Roboto;
 	line-height: 1.5em;
 }
-.menu .pizza-tab.menuTab .item .price {
+.menu .menuTab .item .price {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -1858,7 +1858,7 @@ span:nth-of-type(2) {
 		width:100%;
 	}
 	.menu .main {
-		width: 65%;
+		width: 100%;
 	}
 }
 @media screen and (max-width: 660px) {
@@ -1882,6 +1882,9 @@ span:nth-of-type(2) {
 	}
 	.promo-slider .left {
 		width: 80%;
+	}
+	.menu .nav {
+		width: 40%;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -1931,5 +1934,30 @@ span:nth-of-type(2) {
 	}
 	.promo-slider .left h2 {
 		word-wrap: break-word;
+	}
+	.menu .nav {
+		width: 55%;
+	}
+	.menu .pizza-tab .wrap, .menu .sushi-tab .wrap, .menu .lunch-tab .wrap, .menu .desert-tab .wrap, .menu .salad-tab .wrap, .menu .drinks-tab .wrap {
+		margin-top: 0;
+	}
+
+}
+@media screen and (max-width: 350px) {
+	.menu .nav {
+		width: 90%;
+	}
+	.menu .main > .tab.active.op {
+		padding-left: 0;
+	}
+	.menu .pizza-tab .wrap .item, .menu .sushi-tab .wrap .item, .menu .lunch-tab .wrap .item, .menu .desert-tab .wrap .item, .menu .salad-tab .wrap .item, .menu .drinks-tab .wrap .item {
+		width: 75vw;
+	}
+	.menu .menuTab .item .price {
+		width: 80%;
+		margin: 25px 0 0 20%;
+	}
+	.menu .pizza-tab, .menu .sushi-tab, .menu .lunch-tab, .menu .desert-tab, .menu .salad-tab, .menu .drinks-tab {
+		height: 690px;
 	}
 }
