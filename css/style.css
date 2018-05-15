@@ -397,9 +397,23 @@ section.menu {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
+}
+section.menu:before {
+	content: "";
+	width: 50%;
+	display: block;
+	height: 110%;
+	top: 0;
+	left: -5%;
+	position: absolute;
+	background: url(../img/tiger-gray-lay.png) 0% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
 }
 .menu .main {
-	width: 68%;
+	width: 70%;
+	padding-left: 30px;
 }
 .menu .main .promo {
 	
@@ -561,6 +575,7 @@ section.menu {
 	overflow-x: scroll;
 	overflow-y: hidden;
 	padding-top: 40px;
+	position: relative;
 }
 .menu .pizza-tab .wrap, .menu .sushi-tab .wrap, .menu .lunch-tab .wrap, .menu .desert-tab .wrap, .menu .salad-tab .wrap, .menu .drinks-tab .wrap {
 	display: -webkit-flex;
@@ -593,6 +608,18 @@ section.menu {
 	width: 80%;
 	padding-top: 49%;
 	margin: 0 auto;
+}
+.menu .menuTab .descr-promo {
+	position: absolute;
+	bottom: 70px;
+	left: 30px;
+	color: #ffe5c0;
+	font: 300 14px Roboto;
+}
+.menu .menuTab .descr-promo p, .menu .menuTab .descr-promo div {
+	padding-left: 15px;
+	margin-bottom: 15px;
+	border-left: 3px solid #d6a154;
 }
 .menu .pizza-tab.menuTab .item h4 {
 	color: #ff5050;
@@ -658,7 +685,25 @@ section.menu {
 .menu .main > .tab.active.op {
 	opacity:1;
 	transform: translate(0,0);
+	box-shadow: 0 0 10px 6px #1f1e1e;
+	padding-left: 30px;
 }
+.menu .main .promo.active.op {
+	box-shadow: none;
+	padding: 0;
+}
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px red; 
+}
+
 /******************
 **** Placement ****
 ******************/
