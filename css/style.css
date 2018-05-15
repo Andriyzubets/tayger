@@ -412,7 +412,7 @@ section.menu:before {
 	background-size: contain;
 }
 .menu .main {
-	width: 70%;
+	width: 68%;
 	padding-left: 30px;
 }
 .menu .main .promo {
@@ -693,15 +693,15 @@ section.menu:before {
 	padding: 0;
 }
 ::-webkit-scrollbar {
-    width: 3px;
+	width: 3px;
 }
 ::-webkit-scrollbar-track {
-    border-radius: 10px;
+	border-radius: 10px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px red; 
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px red; 
 }
 
 /******************
@@ -1706,7 +1706,9 @@ span:nth-of-type(2) {
 	.video-title .title h1 {
 		margin-bottom: 45px;
 	}
-
+	.header .center {
+		width: 48%;
+	}
 }
 @media screen and (max-width: 1024px) {
 	.video-title .title h1, .promo-slider .left .tag, .promo-slider .left h2 {
@@ -1748,6 +1750,15 @@ span:nth-of-type(2) {
 	.map .map-area {
 		height: 70vh;
 	}
+	.menu .main .promo .item1 {
+		min-height: 600px;
+	}
+	.menu .main .promo .item h3, .menu .main .promo .item .price .price-item {
+		font-size: 30px;
+	}
+	.menu .main .promo .item {
+		padding-top: 20px;
+	}
 }
 @media screen and (max-width: 922px) {
 	.video-title > .img {
@@ -1756,11 +1767,33 @@ span:nth-of-type(2) {
 	.video-title .title {
 		width: 50%;
 	}
+	.menu .main .promo .item .price {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
 }
 @media screen and (max-width: 768px) {
 	.video-title video {
 		width: auto;
 		height: 100%
+	}
+	.header .center .desc {
+		display: none;
+	}
+	.promo-slider .left .desc {
+		width: 100%
+	}
+	.menu .main .promo .double {
+		display: none;
+	}
+	.menu .main .promo .item1 {
+		width:100%;
+	}
+	.menu .main {
+		width: 65%;
 	}
 }
 @media screen and (max-width: 660px) {
@@ -1771,6 +1804,19 @@ span:nth-of-type(2) {
 	.header .logo {
 		width: 13%;
 		padding-top: 13%;
+	}
+	.header .center {
+		display: none;
+	}
+	.header.fixed .logo {
+		width: 8%;
+		padding-top: 8%;
+	}
+	.promo-slider .right {
+		display: none;
+	}
+	.promo-slider .left {
+		width: 80%;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -1813,5 +1859,12 @@ span:nth-of-type(2) {
 	}
 	.map .title .cont > a, .map .title .cont p {
 		font-size: 12px;
+	}
+	.header.fixed .logo {
+		width: 10%;
+		padding-top: 10%;
+	}
+	.promo-slider .left h2 {
+		word-wrap: break-word;
 	}
 }
