@@ -615,6 +615,7 @@ section.menu:before {
 .menu  .nav h2, .menu .tab h2 {
 	color: #cfcfcf;
 	font: 51px MarketBold;
+	position: relative;
 }
 .menu  .nav ul {
 	padding: 80px 0 0 60px;
@@ -659,6 +660,18 @@ section.menu:before {
 	width: 22%;
 	padding-top: 22%;
 	
+}
+.menu .menuTab h2 .close {
+	position: absolute;
+	width: 30px;
+	padding-top: 30px;
+	background: url(../img/close-but.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	right: 30px;
+	top: 50%;
+	transform: translate(0,-50%);
+	cursor: pointer;
 }
 .menu  .nav ul li .img.pizza {
 	background: url(../img/pizza-icon.png) 50% no-repeat;
