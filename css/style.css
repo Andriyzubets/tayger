@@ -1678,6 +1678,9 @@ span:nth-of-type(2) {
 	height: 45px;
 	margin-left: 6px;
 }
+.menu .nav .sandw {
+	display: none;
+}
 /*******************
 ***** adaptive *****
 *******************/
@@ -1708,6 +1711,9 @@ span:nth-of-type(2) {
 	}
 	.header .center {
 		width: 48%;
+	}
+	.menu .nav ul li {
+		width: auto;
 	}
 }
 @media screen and (max-width: 1024px) {
@@ -1759,6 +1765,7 @@ span:nth-of-type(2) {
 	.menu .main .promo .item {
 		padding-top: 20px;
 	}
+
 }
 @media screen and (max-width: 922px) {
 	.video-title > .img {
@@ -1773,6 +1780,64 @@ span:nth-of-type(2) {
 		-ms-flex-wrap: wrap;
 		-o-flex-wrap: wrap;
 		flex-wrap: wrap;
+	}
+	.menu .nav ul {
+		display: none;
+		opacity: 0;
+		transform: translate(10px,0);
+	}
+	.menu .nav ul.active {
+		display: block;
+	}
+	.menu .nav ul.active.op {
+		opacity:1;
+		transform: translate(0,0);
+		background: #222222;
+		padding: 0;
+	}
+	.menu .nav {
+		width: 28%;
+		padding-top: 0;
+		position: absolute;
+		right: 0;
+		top: -70px;
+	}
+	.menu .main {
+		width: 100%;
+	}
+	.menu .nav .sandw {
+		display: block;
+		width: 40px;
+		background: #cfcfcf;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		height: 3px;
+		transform: translate(0,-50%);
+		cursor: pointer;
+	}
+	.menu .nav .sandw.active {
+		top: 6%;
+	}
+	.menu .nav .sandw:before {
+		content: "";
+		display: block;
+		width: 40px;
+		background: #cfcfcf;
+		position: absolute;
+		right: 0;
+		height: 3px;
+		top: -10px;
+	}
+	.menu .nav .sandw:after {
+		content: "";
+		display: block;
+		width: 40px;
+		background: #cfcfcf;
+		position: absolute;
+		right: 0;
+		height: 3px;
+		top: 10px;
 	}
 }
 @media screen and (max-width: 768px) {

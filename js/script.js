@@ -152,7 +152,25 @@ function slider1() {
 		}
 	}
 }
+// menu mobile 
 
+	document.querySelector('.menu .nav .sandw').onclick = function() {
+		if (!document.querySelector('.menu .nav .sandw').classList.contains('active')) {
+		document.querySelector('.menu .nav ul').classList.add('active');
+		document.querySelector('.menu .nav .sandw').classList.add('active')
+		setTimeout(function(){
+			document.querySelector('.menu .nav ul').classList.add('op');
+		})
+	}
+	else if (document.querySelector('.menu .nav .sandw').classList.contains('active')) {
+		document.querySelector('.menu .nav ul').classList.remove('op');
+		document.querySelector('.menu .nav .sandw').classList.remove('active')
+		setTimeout(function(){
+			document.querySelector('.menu .nav ul').classList.remove('active');
+		})
+	}
+}
+// menu switcher
 if(document.querySelector('.menu')) {
 	let menuTabs = document.querySelectorAll('.menu .tab');
 	let menuButts = document.querySelectorAll('.menu .nav li');
@@ -168,6 +186,9 @@ if(document.querySelector('.menu')) {
 		menuTabs[5].classList.remove('op');
 		menuTabs[6].classList.remove('op');
 		menuButts[0].classList.add('active');
+		document.querySelector('.menu .nav ul').classList.remove('op');
+		document.querySelector('.menu .nav .sandw').classList.remove('active')
+
 		setTimeout(function(){
 			menuTabs[0].classList.remove('active');
 			menuTabs[2].classList.remove('active');
@@ -176,6 +197,7 @@ if(document.querySelector('.menu')) {
 			menuTabs[5].classList.remove('active');
 			menuTabs[6].classList.remove('active');
 			menuTabs[1].classList.add('active');
+			document.querySelector('.menu .nav ul').classList.remove('active');
 			setTimeout(function(){
 				menuTabs[1].classList.add('op');
 			},200);
@@ -192,6 +214,9 @@ if(document.querySelector('.menu')) {
 		menuTabs[5].classList.remove('op');
 		menuTabs[6].classList.remove('op');
 		menuButts[1].classList.add('active');
+		document.querySelector('.menu .nav ul').classList.remove('op');
+		document.querySelector('.menu .nav .sandw').classList.remove('active')
+
 		setTimeout(function(){
 			menuTabs[0].classList.remove('active');
 			menuTabs[1].classList.remove('active');
@@ -200,6 +225,7 @@ if(document.querySelector('.menu')) {
 			menuTabs[5].classList.remove('active');
 			menuTabs[6].classList.remove('active');
 			menuTabs[2].classList.add('active');
+			document.querySelector('.menu .nav ul').classList.remove('active');
 			setTimeout(function(){
 				menuTabs[2].classList.add('op');
 			},200);
@@ -216,6 +242,9 @@ if(document.querySelector('.menu')) {
 		menuTabs[5].classList.remove('op');
 		menuTabs[6].classList.remove('op');
 		menuButts[2].classList.add('active');
+		document.querySelector('.menu .nav ul').classList.remove('op');
+		document.querySelector('.menu .nav .sandw').classList.remove('active')
+
 		setTimeout(function(){
 			menuTabs[0].classList.remove('active');
 			menuTabs[1].classList.remove('active');
@@ -224,6 +253,7 @@ if(document.querySelector('.menu')) {
 			menuTabs[5].classList.remove('active');
 			menuTabs[6].classList.remove('active');
 			menuTabs[3].classList.add('active');
+			document.querySelector('.menu .nav ul').classList.remove('active');
 			setTimeout(function(){
 				menuTabs[3].classList.add('op');
 			},200);
@@ -240,6 +270,9 @@ if(document.querySelector('.menu')) {
 		menuTabs[5].classList.remove('op');
 		menuTabs[6].classList.remove('op');
 		menuButts[3].classList.add('active');
+		document.querySelector('.menu .nav ul').classList.remove('op');
+		document.querySelector('.menu .nav .sandw').classList.remove('active')
+
 		setTimeout(function(){
 			menuTabs[0].classList.remove('active');
 			menuTabs[1].classList.remove('active');
@@ -248,6 +281,7 @@ if(document.querySelector('.menu')) {
 			menuTabs[5].classList.remove('active');
 			menuTabs[6].classList.remove('active');
 			menuTabs[4].classList.add('active');
+			document.querySelector('.menu .nav ul').classList.remove('active');
 			setTimeout(function(){
 				menuTabs[4].classList.add('op');
 			},200);
@@ -264,6 +298,9 @@ if(document.querySelector('.menu')) {
 		menuTabs[4].classList.remove('op');
 		menuTabs[6].classList.remove('op');
 		menuButts[4].classList.add('active');
+		document.querySelector('.menu .nav ul').classList.remove('op');
+		document.querySelector('.menu .nav .sandw').classList.remove('active')
+
 		setTimeout(function(){
 			menuTabs[0].classList.remove('active');
 			menuTabs[1].classList.remove('active');
@@ -272,6 +309,7 @@ if(document.querySelector('.menu')) {
 			menuTabs[4].classList.remove('active');
 			menuTabs[6].classList.remove('active');
 			menuTabs[5].classList.add('active');
+			document.querySelector('.menu .nav ul').classList.remove('active');
 			setTimeout(function(){
 				menuTabs[5].classList.add('op');
 			},200);
@@ -288,6 +326,9 @@ if(document.querySelector('.menu')) {
 		menuTabs[4].classList.remove('op');
 		menuTabs[5].classList.remove('op');
 		menuButts[5].classList.add('active');
+		document.querySelector('.menu .nav ul').classList.remove('op');
+		document.querySelector('.menu .nav .sandw').classList.remove('active')
+		
 		setTimeout(function(){
 			menuTabs[0].classList.remove('active');
 			menuTabs[1].classList.remove('active');
@@ -296,6 +337,7 @@ if(document.querySelector('.menu')) {
 			menuTabs[4].classList.remove('active');
 			menuTabs[5].classList.remove('active');
 			menuTabs[6].classList.add('active');
+			document.querySelector('.menu .nav ul').classList.remove('active');
 			setTimeout(function(){
 				menuTabs[6].classList.add('op');
 			},200);
