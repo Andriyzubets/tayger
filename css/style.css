@@ -1701,6 +1701,15 @@ span:nth-of-type(2) {
 	.map .title .cont > a {
 		padding-top: 0;
 	}
+	.placement .wrap .control h2 {
+		font-size: 36px;
+	}
+	.placement .wrap .control .view {
+		padding: 10px 30px;
+	}
+	.placement .wrap .control {
+		padding: 30px 0;
+	}
 }
 @media screen and (max-width: 1366px) {
 	.video-title .title {
@@ -1714,6 +1723,21 @@ span:nth-of-type(2) {
 	}
 	.menu .nav ul li {
 		width: auto;
+	}
+	.placement .wrap .control h2 {
+		font-size: 30px;
+	}
+	.placement .wrap .control .view {
+		width: calc(70% - 60px);
+	}
+	.placement .wrap .control .subtitle {
+		margin-bottom: 30px;
+	}
+	.placement .wrap .control .buts {
+		margin: 15px 0 25px;
+	}
+	.map .title {
+		width: 45%;
 	}
 }
 @media screen and (max-width: 1024px) {
@@ -1740,7 +1764,7 @@ span:nth-of-type(2) {
 		height: 50%;
 	}
 	.map .title {
-		width: 40%;
+		width: 50%;
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
 		-ms-flex-direction: column;
@@ -1765,7 +1789,12 @@ span:nth-of-type(2) {
 	.menu .main .promo .item {
 		padding-top: 20px;
 	}
-
+	.placement .wrap .slider {
+		width: 60%;
+	}
+	.placement .wrap .control {
+		width: 37%;
+	}
 }
 @media screen and (max-width: 922px) {
 	.video-title > .img {
@@ -1839,6 +1868,28 @@ span:nth-of-type(2) {
 		height: 3px;
 		top: 10px;
 	}
+	.placement .wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.placement .wrap .control {
+		width: 90%;
+	}
+	.placement .wrap .control .view {
+		width: calc(30% - 60px);
+	}
+	.placement .wrap .slider {
+		width: 100%;
+		padding-top: 60%;
+	}
+	.placement .wrap .first-floor, .placement .wrap .second-floor, .placement .wrap .third-floor {
+
+		width: 100%;
+		height: 63%;
+	}
 }
 @media screen and (max-width: 768px) {
 	.video-title video {
@@ -1859,6 +1910,33 @@ span:nth-of-type(2) {
 	}
 	.menu .main {
 		width: 100%;
+	}
+	.placement .wrap .first-floor .double, .placement .wrap .second-floor .double, .placement .wrap .third-floor .double {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.placement .wrap .first-floor, .placement .wrap .second-floor, .placement .wrap .third-floor {
+		height: 100%;
+	}
+	.placement .wrap .first-floor .double .left, .placement .wrap .second-floor .double .left, .placement .wrap .third-floor .double .left {
+		width: calc(100% - 40px);
+	}
+	.placement .wrap .first-floor .double .right, .placement .wrap .second-floor .double .right, .placement .wrap .third-floor .double .right {
+		width: calc(100% - 35px);
+		padding: 15px 17px 0 17px;
+	}
+	.placement .wrap .first-floor .double .right .goods .item, .placement .wrap .second-floor .double .right .goods .item, .placement .wrap .third-floor .double .right .goods .item {
+		width: 30%;
+		margin-bottom: 10px;
+	}
+	.placement .wrap .first-floor .double .left .scheme, .placement .wrap .second-floor .double .left .scheme, .placement .wrap .third-floor .double .left .scheme {
+		padding-top: 60%;
+	}
+	.placement .first-floor .butts, .placement .second-floor .butts, .placement .third-floor .butts {
+		display: none;
 	}
 }
 @media screen and (max-width: 660px) {
@@ -1886,6 +1964,10 @@ span:nth-of-type(2) {
 	.menu .nav {
 		width: 40%;
 	}
+	.placement .wrap .control .view {
+		width: calc(40% - 60px);
+	}
+
 }
 @media screen and (max-width: 480px) {
 	.video-title .title {
@@ -1941,7 +2023,21 @@ span:nth-of-type(2) {
 	.menu .pizza-tab .wrap, .menu .sushi-tab .wrap, .menu .lunch-tab .wrap, .menu .desert-tab .wrap, .menu .salad-tab .wrap, .menu .drinks-tab .wrap {
 		margin-top: 0;
 	}
-
+	.map .title {
+		width: 60%;
+	}
+	.placement .wrap .control .view {
+		width: calc(50% - 60px);
+	}
+	.placement .wrap .control .buts div.active {
+		font-size: 90px;
+	}
+	.placement .wrap .control .buts {
+		font-size: 60px;
+	}
+	.placement .wrap .control .buts div {
+		margin-right: 25px;
+	}
 }
 @media screen and (max-width: 350px) {
 	.menu .nav {
@@ -1959,5 +2055,8 @@ span:nth-of-type(2) {
 	}
 	.menu .pizza-tab, .menu .sushi-tab, .menu .lunch-tab, .menu .desert-tab, .menu .salad-tab, .menu .drinks-tab {
 		height: 690px;
+	}
+	.placement .wrap .control .view {
+		width: calc(80% - 60px);
 	}
 }
