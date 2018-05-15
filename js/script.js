@@ -360,7 +360,7 @@ if(document.querySelector('.menu')) {
 			document.querySelector('.menu .nav ul').classList.remove('active');
 			setTimeout(function(){
 				menuTabs[0].classList.add('op');
-				
+
 			},200);
 		}
 	}
@@ -640,4 +640,4 @@ thirdFloorLayClose.onclick = function() {
 	document.querySelector('.placement .wrap .slide3').style.cssText=slidePlace3img;
 	document.querySelector('.placement .wrap .slide4').style.cssText=slidePlace4img;
 
-
+   

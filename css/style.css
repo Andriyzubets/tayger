@@ -22,6 +22,7 @@ body {
 a {
 	text-decoration: none;
 }
+
 .header {
 	position: fixed;
 	left: 50%;
@@ -732,6 +733,7 @@ section.menu:before {
 	margin-top: 65px;
 	overflow-x: scroll;
 	overflow-y: hidden;
+	-webkit-overflow-scrolling:touch;
 }
 .menu .pizza-tab .wrap .item, .menu .sushi-tab .wrap .item, .menu .lunch-tab .wrap .item, .menu .desert-tab .wrap .item, .menu .salad-tab .wrap .item, .menu .drinks-tab .wrap .item {
 	width: 280px;

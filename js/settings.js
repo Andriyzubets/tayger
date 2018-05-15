@@ -1,4 +1,4 @@
-if (document.querySelector('body.salad-body')) {
+if (document.querySelector('body.pizza-body')) {
 	headerVideo = 'img/video-1.mp4';
 	// Slider
 	// slider1
