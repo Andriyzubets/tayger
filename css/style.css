@@ -705,8 +705,6 @@ section.menu:before {
 }
 .menu .pizza-tab, .menu .sushi-tab, .menu .lunch-tab, .menu .desert-tab, .menu .salad-tab, .menu .drinks-tab {
 	height: 795px;
-	overflow-x: scroll;
-	overflow-y: hidden;
 	padding-top: 40px;
 	position: relative;
 }
@@ -730,8 +728,10 @@ section.menu:before {
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
-	height: 100%;
+	height: 83%;
 	margin-top: 65px;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 .menu .pizza-tab .wrap .item, .menu .sushi-tab .wrap .item, .menu .lunch-tab .wrap .item, .menu .desert-tab .wrap .item, .menu .salad-tab .wrap .item, .menu .drinks-tab .wrap .item {
 	width: 280px;
@@ -752,6 +752,7 @@ section.menu:before {
 	left: 30px;
 	color: #ffe5c0;
 	font: 300 14px Roboto;
+	height: 10%;
 }
 .menu .menuTab .descr-promo p, .menu .menuTab .descr-promo div {
 	padding-left: 15px;
@@ -2107,6 +2108,18 @@ span:nth-of-type(2) {
 	}
 	.promo-slider .wrap {
 		padding-top: 0;
+	}
+	.menu .pizza-tab .wrap, .menu .sushi-tab .wrap, .menu .lunch-tab .wrap, .menu .desert-tab .wrap, .menu .salad-tab .wrap, .menu .drinks-tab .wrap {
+		margin-top: 30px;
+	}
+	.menu .nav ul {
+		padding-top: 30px;
+	}
+	.menu .pizza-tab, .menu .sushi-tab, .menu .lunch-tab, .menu .desert-tab, .menu .salad-tab, .menu .drinks-tab {
+		height: 625px;
+	}
+	.menu .menuTab .descr-promo {
+		bottom: 10px;
 	}
 }
 @media screen and (max-width: 1024px) {
